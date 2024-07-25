@@ -80,11 +80,11 @@ export const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
 		}
 	};
 
-	const onEdit = (id:string) => {
+	const onEdit = (id: string) => {
 		router.push(`/teacher/courses/${courseId}/chapters/${id}`);
-	}
+	};
 	return (
-		<div className="mt-6 border bg-slate-100 rounded-md p-4 relative">
+		<div className="mt-6 border bg-slate-100 rounded-md p-4 relative ">
 			{isUpdating && (
 				<div className="absolute h-full w-full bg-slate-500/20 top-0 right-0 rounded-md flex items-center justify-center">
 					<Loader2 className="animate-spin h-6 w-6 text-sky-700" />
